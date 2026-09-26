@@ -1,0 +1,10 @@
+{
+  "name": "devtools-security-redirect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Демо: редирект на main.html при открытых DevTools на 2.html",
+  "scripts": {
+    "start": "python3 -m http.server 43123 --bind 127.0.0.1",
+    "dev": "python3 -m http.server 43123 --bind 127.0.0.1"
+  }
+}

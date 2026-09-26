@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protected</title>
+  <script src="security.js"></script>
+  <style>
+    :root {
+      --bg: #10140f;
+      --fg: #eaf0e7;
+      --muted: #9bb0a0;
+      --accent: #5ecf8a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--fg);
+      background:
+        radial-gradient(ellipse 70% 55% at 80% 15%, #1c3324 0%, transparent 55%),
+        radial-gradient(ellipse 60% 45% at 10% 85%, #16241c 0%, transparent 50%),
+        var(--bg);
+    }
+
+    main {
+      max-width: 36rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: 2rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Protected page</h1>
+    <p>Эта страница доступна только без открытых DevTools. Контент скрыт системой защиты.</p>
+  </main>
+</body>
+</html>
